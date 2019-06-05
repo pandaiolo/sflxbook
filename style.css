@@ -30,15 +30,13 @@ h3 {
   margin: 5px 0 20px 0;
 }
 
-a {
-  color: yellow;
+a i {
   padding-bottom: 20px;
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
 a:hover {
   text-decoration: none;
-  color: purple;
 }
 
 #banner {
