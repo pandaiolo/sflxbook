@@ -1,37 +1,39 @@
-body{
+body {
+  width: 100vw;
   color: black;
-  font-size: 15px;
+  font-size: 1rem;
   text-align: center;
   font-family: Titillium Web;
 }
 
-
 h1 {
   font-family: Open Sans Condensed;
-  color: #4463AE;
+  color: #4463ae;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 3rem;
   padding: 30px;
 }
 
 h2 {
   font-family: Open Sans Condensed;
-  color: #4463AE;
+  color: #4463ae;
   font-weight: lighter;
-  font-size: 30px;
-  padding: 30px;
+  font-size: 2rem;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 h3 {
   font-family: Open Sans Condensed;
-  color : grey;
-  font-size: 20px;
+  color: grey;
+  font-size: 1rem;
+  margin: 5px 0 20px 0;
 }
 
 a {
   color: yellow;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 a:hover {
@@ -39,100 +41,143 @@ a:hover {
   color: purple;
 }
 
-
 #banner {
-  background: linear-gradient(to left top, #7DCED3 50%, #4463AE 50%);
+  background: linear-gradient(to left top, #7dced3 50%, #4463ae 50%);
   display: flex;
   flex-direction: column;
-  min-height:100vh;
+  min-height: 95vh;
   justify-content: center;
   align-items: center;
-  top: -250px;
+  /* top: -250px; */
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 20px;
- }
-
-#title{
-  font-family: Open Sans Condensed;
-  color: white;
-  font-size: 200px;
 }
 
-#subtitle{
+#title {
   font-family: Open Sans Condensed;
   color: white;
-  font-size: 60px;
+  font-size: 6rem;
+}
+
+#subtitle {
+  font-family: Open Sans Condensed;
+  color: white;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
-
 #cover {
-  background-color: #EFEBE7; 
+  background-color: #efebe7;
 }
- 
+
 #cover-text {
   font-family: Open Sans Condensed bold 700;
-  color: #DB9671;
-  font-size: 50px;
-  text-align : center;
+  color: #db9671;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
 }
 
-
-#cover img{
-  height: 100%;
+#cover img {
   max-height: 100vh;
+  max-width: 100%;
 }
 
+@media (min-width: 800px) {
+  .container {
+    width: 90%;
+    max-width: 960px;
+  }
 
-.card { 
+  .card.full-height {
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    max-width: none !important;
+  }
+
+  .text {
+    max-width: 90% !important;
+  }
+}
+
+.container {
+  padding: 0 !important;
+  margin: auto !important;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  min-height:100vh;
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: 0 !important;
 }
 
 #team {
-  background-color: #EFEBE7; 
+  background-color: #efebe7;
+}
+
+#team .card p {
+  text-align: left;
+  width: 80%;
 }
 
 .img-with-margin {
-  max-width: 50vw;
+  max-width: 90vw;
   margin-bottom: 10px;
 }
 
+.img-with-margin.half {
+  max-width: 50vw;
+}
+
 .photo-id {
-  width: 250px;
+  width: 200px;
   border-radius: 50%;
+  margin-top: 40px;
 }
 
-#footer {
-  background-color: #4463AE;
-  padding: 30px;  
- } 
+footer {
+  background-color: #4463ae;
+  padding: 30px;
+}
 
-#footer p{
+footer p {
   color: white;
 }
 
-
-#footer a{
+footer a {
   color: white;
 }
 
-#footer i.fab{
-  font-size: 40px;
+footer i.fab {
+  font-size: 1.5rem;
 }
 
-#footer a:hover{
-  color:black;
+footer a:hover {
+  color: black;
+}
+
+footer li {
+  display: inline-block;
 }
 
 .text {
-  width: 700px;
-  text-align : left;
+  max-width: 700px;
+  text-align: left;
+  font-size: 1rem;
+  margin: 40px 0;
 }
 
-
+.center {
+  text-align: center;
+}
