@@ -39,6 +39,21 @@ a:hover {
   text-decoration: none;
 }
 
+form .form-control {
+  border: 1px solid #4463ae;
+}
+
+form label {
+  color: white !important;
+  font-size: 1.5rem !important;
+}
+
+form button {
+  color: white !important;
+  background-color: #4463ae !important;
+  border: 1px solid #4463ae !important;
+}
+
 #banner {
   background: linear-gradient(to left top, #7dced3 50%, #4463ae 50%);
   display: flex;
